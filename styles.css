@@ -63,7 +63,7 @@ body {
 }
 
 /* 1.2 Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .navigation {
         align-items: center;
         height: 5vh;
@@ -106,7 +106,7 @@ body {
 }
 
 /* 2.2 Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #header {
         padding: 50px;
         text-align: center;
@@ -304,7 +304,7 @@ body {
 }
 
 /* 3.2 Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #about {
         align-items: center;
         flex-direction: column-reverse;
@@ -462,7 +462,7 @@ h2 {
 }
 
 /* 4.2 Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #hobbies {
         flex-direction: column;
         gap: 30px;
@@ -542,7 +542,7 @@ h2 {
 }
 
 /* 5.2 Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #contact {
         flex-direction: column;
         gap: 30px;
@@ -596,7 +596,7 @@ footer p {
 }
 
 /* 6.2 Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     footer {
         padding: 10px 10px;
     }
