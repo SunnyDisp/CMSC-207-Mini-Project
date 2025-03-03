@@ -1,119 +1,98 @@
-// Write the logic for switch button
+// Define button elements
 const switchBtn = document.querySelector("#button__switch");
-
-const aboutMessage = document.querySelector(".about__image-title");
-const aboutPhoto = document.querySelector(".about__image-photo");
-const aboutClass = document.querySelector(".about__class");
-const aboutGuild = document.querySelector(".about__guild");
-const aboutQuest = document.querySelector(".about__quest");
-const aboutSkills = document.querySelector(".about__skills");
-const aboutObjective = document.querySelector(".about__objective");
-const aboutSidekick = document.querySelector(".about__sidekick");
-const aboutOath = document.querySelector(".about__oath");
-
-function switchPlayer() {
-    if (aboutMessage.innerHTML === "SANNIE AGNES") {
-        
-        // Change Name
-        aboutMessage.innerHTML = "THE LICH KING";
-
-        // Change Image
-        aboutPhoto.style.backgroundImage = "url('images/lich.jpg')";
-        aboutPhoto.style.backgroundSize = "cover"; // Ensures image fits well
-        aboutPhoto.style.backgroundPosition = "center";
-
-        // Change Class
-        aboutClass.innerHTML = "<span>CLASS:</span> Undead Sorcerer of Doom";
-
-        // Change Guild
-        aboutGuild.innerHTML = "<span>GUILD:</span> Harbingers of the End";
-
-        // Change Quest
-        aboutQuest.innerHTML = "<span>QUEST:</span> The total annihilation of all life";
-
-        // Change Skills
-        aboutSkills.innerHTML = "<span>SKILLS:</span> Necromancy, Mind Control, Immortality";
-
-        // Change Objective
-        aboutObjective.innerHTML = "<span>OBJECTIVE:</span> Erase all existence, including you, foolish mortal";
-
-        // Change Sidekick
-        aboutSidekick.innerHTML = "<span>SIDEKICK:</span> Minions of the Void that consume all life forms, starting with you";
-
-        // Change Oath
-        aboutOath.innerHTML = "<span>HERO'S OATH:</span> Choose another player. Lest your story end before it even begins.";
-    } else {
-        
-        // Change Name
-        aboutMessage.textContent = "SANNIE AGNES";
-
-        // Change Image
-        aboutPhoto.style.backgroundImage = "url('images/profile.png')";
-        aboutPhoto.style.backgroundSize = "cover";
-        aboutPhoto.style.backgroundPosition = "center";
-
-        // Change Class
-        aboutClass.innerHTML = "<span>CLASS:</span> Aspiring Web Developer";
-
-        // Change Guild
-        aboutGuild.innerHTML = "<span>GUILD:</span> UPOU Diploma in Computer Science";
-
-        // Change Quest
-        aboutQuest.innerHTML = "<span>QUEST:</span> Mastering Web Development";
-
-        // Change Skills
-        aboutSkills.innerHTML = "<span>SKILLS:</span> Administration & Finance, HTML, CSS, JavaScript";
-
-        // Change Objective
-        aboutObjective.innerHTML = "<span>OBJECTIVE:</span> Gain the skills needed to level up workplace efficiency with tech solutions";
-
-        // Change Sidekick
-        aboutSidekick.innerHTML = "<span>SIDEKICK:</span> Goldie, a loyal companion and always on the lookout for snacks";
-
-        // Change Oath
-        aboutOath.innerHTML = "<span>HERO'S OATH:</span> Sweet! Let's get pizza after this quest, your treat of course!";
-    }
-}
-
-switchBtn.addEventListener("click", switchPlayer);
-
-// Write the logic for the back button
 const backBtn = document.querySelector("#button__back");
-
-backBtn.addEventListener("click", () => {
-    aboutMessage.textContent = "For real?";
-});
-
-// Write the logic for the start button
 const startBtn = document.querySelector("#button__start");
 
-startBtn.addEventListener("click", () => {
-    aboutMessage.textContent = "Adventure awaits!";
-});
+// Define about elements
+const aboutElements = {
+    message: document.querySelector(".about__image-title"),
+    photo: document.querySelector(".about__image-photo"),
+    class: document.querySelector(".about__class"),
+    guild: document.querySelector(".about__guild"),
+    quest: document.querySelector(".about__quest"),
+    skills: document.querySelector(".about__skills"),
+    objective: document.querySelector(".about__objective"),
+    sidekick: document.querySelector(".about__sidekick"),
+    oath: document.querySelector(".about__oath")
+};
 
-// Write the logic to swap video game images
-const photoGames = document.querySelector("#photo_games");
-const photoTravel = document.querySelector("#photo_travel");
-const photoAnime = document.querySelector("#photo_anime");
+// Define player profiles
+const playerProfiles = {
+    sannie: {
+        name: "SANNIE AGNES",
+        image: "images/profile.png",
+        class: "Aspiring Web Developer",
+        guild: "UPOU Diploma in Computer Science",
+        quest: "Mastering Web Development",
+        skills: "Administration & Finance, HTML, CSS, JavaScript",
+        objective: "Gain the skills needed to level up workplace efficiency with tech solutions",
+        sidekick: "Goldie, a loyal companion and always on the lookout for snacks",
+        oath: "Sweet! Let's get pizza after this quest, your treat of course!"
+    },
 
-function swapImage(selectedImg, img1, img2) {
-    if (!selectedImg || !selectedImg.src) return; // Prevents errors if elements are missing
+    lichKing: {
+        name: "THE LICH KING",
+        image: "images/lich.jpg",
+        class: "Undead Sorcerer of Doom",
+        guild: "Harbingers of the End",
+        quest: "The total annihilation of all life",
+        skills: "Necromancy, Mind Control, Immortality",
+        objective: "Erase all existence, including you, foolish mortal",
+        sidekick: "Minions of the Void that consume all life forms, starting with you",
+        oath: "Choose another player. Lest your story end before it even begins."
+    }
+};
 
-    if (selectedImg.src.includes(img1)) {
-        selectedImg.src = `images/${img2}`;
+// Logic to update profile content
+function updateContent(profile) {
+    aboutElements.message.textContent = profile.name;
+    aboutElements.photo.style.backgroundImage = `url('${profile.image}')`;
+    aboutElements.photo.style.backgroundSize = "cover";
+    aboutElements.photo.style.backgroundPosition = "center";
+    aboutElements.class.innerHTML = `<span>CLASS:</span> ${profile.class}`;
+    aboutElements.guild.innerHTML = `<span>GUILD:</span> ${profile.guild}`;
+    aboutElements.quest.innerHTML = `<span>QUEST:</span> ${profile.quest}`;
+    aboutElements.skills.innerHTML = `<span>SKILLS:</span> ${profile.skills}`;
+    aboutElements.objective.innerHTML = `<span>OBJECTIVE:</span> ${profile.objective}`;
+    aboutElements.sidekick.innerHTML = `<span>SIDEKICK:</span> ${profile.sidekick}`;
+    aboutElements.oath.innerHTML = `<span>HERO'S OATH:</span> ${profile.oath}`;
+}
+
+// Logic for swapping players
+function switchPlayer() {
+    if (aboutElements.message.textContent === playerProfiles.sannie.name) {
+        updateContent(playerProfiles.lichKing);
     } else {
-        selectedImg.src = `images/${img1}`;
+        updateContent(playerProfiles.sannie);
     }
 }
 
-photoGames.addEventListener("click", () => {
-    swapImage(photoGames, "gta.jpg", "genshin.png");
-});
+// Event listeners for buttons
+switchBtn.addEventListener("click", switchPlayer);
+backBtn.addEventListener("click", () => aboutElements.message.textContent = "For real?");
+startBtn.addEventListener("click", () => aboutElements.message.textContent = "Adventure awaits!");
 
-photoTravel.addEventListener("click", () => {
-    swapImage(photoTravel, "singapore.jpg", "malaysia.jpg");
-});
+// Define hobbies elements
+const photoElements = {
+    games: document.querySelector("#photo_games"),
+    travel: document.querySelector("#photo_travel"),
+    anime: document.querySelector("#photo_anime")
+};
 
-photoAnime.addEventListener("click", () => {
-    swapImage(photoAnime, "jojo.png", "demonslayer.jpg");
-});
+// Define photo elements
+const swapData = {
+    games: ["gta.jpg", "genshin.png"],
+    travel: ["singapore.jpg", "malaysia.jpg"],
+    anime: ["jojo.png", "demonslayer.jpg"]
+};
+
+// Logic for swapping images
+function swapImage(element, images) {
+    if (!element || !element.src) return;
+    element.src = element.src.includes(images[0]) ? `images/${images[1]}` : `images/${images[0]}`;
+}
+
+// Event listeners for images
+photoElements.games.addEventListener("click", () => swapImage(photoElements.games, swapData.games));
+photoElements.travel.addEventListener("click", () => swapImage(photoElements.travel, swapData.travel));
+photoElements.anime.addEventListener("click", () => swapImage(photoElements.anime, swapData.anime));
