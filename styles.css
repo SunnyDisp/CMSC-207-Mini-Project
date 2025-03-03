@@ -184,7 +184,6 @@ html, body {
     justify-content: space-between;
     flex-grow: 1;
     gap: 25px;
-
 }
 
 .about__text-container,
@@ -400,6 +399,7 @@ h2 {
     justify-content: space-between;
     padding: 50px 100px;
     width: 100%;
+    gap: 25px;
 }
 
 .hobbies__container {
