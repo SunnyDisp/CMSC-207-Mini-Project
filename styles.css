@@ -110,15 +110,14 @@ body {
 @media (max-width: 600px) {
     #header {
         padding: 50px;
-        /* text-align: center; */
     }
 
     .header__text {
-        font-size: 3vw;
+        font-size: 12vw;
     }
 
     .header__subtext{
-        font-size: 1vw;   
+        font-size: 3.3vw;   
     }
 }
 
