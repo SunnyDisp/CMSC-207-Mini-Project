@@ -560,7 +560,6 @@ h2 {
         padding: 70px 50px 50px 50px;
         flex-direction: column;
         gap: 50px;
-        height: 90vh;
     }
 
     .contact__container {
@@ -617,11 +616,10 @@ footer p {
 @media (max-width: 600px) {
     footer {
         padding: 0;
-        height: 10vh;
     }
 
     footer p {
-        font-size: 6vw;
+        font-size: 3vw;
         width: 100%;
     }
 }
