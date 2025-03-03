@@ -1,5 +1,5 @@
 # CMSC-207-Mini-Project
 
-##Project Title
+## Project Title
 CMSC 207 Mini-Project: Build a Personal Web Profile
 
