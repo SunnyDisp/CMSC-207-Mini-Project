@@ -65,8 +65,8 @@ body {
 /* 1.2 Mobile View */
 @media (max-width: 600px) {
     .navigation {
-        /* align-items: center; */
         flex-direction: column;
+        gap: 10px;
         height: auto;
         padding: 15px;
     }
@@ -110,20 +110,19 @@ body {
 @media (max-width: 600px) {
     #header {
         padding: 50px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .header__text {
-        font-size: 3.8rem;
+        font-size: 3vw;
     }
 
     .header__subtext{
-        font-size: 1rem;   
+        font-size: 1vw;   
     }
 }
 
 /* 2.3 Add Header Animation */
-
 .header__text span {
 	animation: depth 1s ease-in-out alternate infinite;
 	position: relative;
