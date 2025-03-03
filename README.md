@@ -4,7 +4,7 @@
 CMSC 207 Mini-Project: Build a Personal Web Profile
 
 ### Project Overview
-This interactive web-based project applies foundational web development concepts from Clyde Hatter's *Create with Code* book. It reinforces HTML structure, CSS styling, and basic JavaScript interactivity to dynamically updated the webpage. This project was completed as a course requirement for *CMSC 207: Web Programming and Development*. The design is heavily inspired by *Stardew Valley* and other pixel-styles Role-Playing-Games (RPG).
+This interactive web-based project applies foundational web development concepts from Clyde Hatter's *Create with Code* book. It reinforces HTML structure, CSS styling, and basic JavaScript interactivity to dynamically update the webpage. This project was completed as a course requirement for *CMSC 207: Web Programming and Development*. The design is heavily inspired by *Stardew Valley* and other Role-Playing-Games (RPG) with Pixel Graphics.
 
 ### Features
 * Animation Effects: CSS animation effects enhance section titles.
