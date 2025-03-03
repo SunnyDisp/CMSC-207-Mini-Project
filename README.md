@@ -4,22 +4,22 @@
 CMSC 207 Mini-Project: Build a Personal Web Profile
 
 ### Project Overview
-This is a simple interactive web-based project that focuses on applying foundational web development concepts taught in Clyde Hatter's Create with Code book. This basic personal web profile reinforce HTML structure, CSS styling, and basic JavaScript interactivity to dynamically update the webpage. This was done as a course requirement for CMSC 207: Web Programming and Development. This basic personal web profile is heavily inspired by the game Stardew Valley and other pixel Role-Playing-Games (RPG).
+This interactive web-based project applies foundational web development concepts from Clyde Hatter's *Create with Code* book. It reinforces HTML structure, CSS styling, and basic JavaScript interactivity to dynamically updated the webpage. This project was completed as a course requirement for *CMSC 207: Web Programming and Development*. The design is heavily inspired by *Stardew Valley* and other pixel-styles Role-Playing-Games (RPG).
 
 ### Features
-* Animation Effects: CSS animation effects were applied in every's section titles.
-* Player Switching: Like that of an RPG, the user can toggle between two characters—an aspiring web developer and an undead sorcerer.
-* Interactive Buttons: Includes a "Back", "Switch", and "Start" button that dynamically modify texts and player description.
+* Animation Effects: CSS animation effects enhance section titles.
+* Player Switching: Users can toggle between two characters—an aspiring web developer and an undead sorcerer, mimicking an RPG character selection.
+* Interactive Buttons: *Back*, *Switch*, and *Start* buttons dynamically modify text and player descriptions.
 * Image Swapping: Clicking on specific images toggles between two different pictures.
-* Responsive Design: Optimized for mobile and desktop view using media query.
+* Responsive Design: Optimized for mobile and desktop view using media queries.
 
 ### Technologies Used
-* HTML: Structure of the webpage
-* CSS: Styling and layout adjustments
-* JavaScript: Interactivity and dynamic content updates
+* HTML: Defines the structure of webpage
+* CSS: Handles styling and layout adjustments
+* JavaScript: Adds interactivity and dynamic content updates
 
 ### Webpage Structure
-The website contains six (6) sections that uses the proper semantic tags, to wit:
+The website consists of six sections, each using proper semantic tags:
 * Navigation Bar
 * Header
 * About Me (Player Loadout) Section
@@ -27,12 +27,14 @@ The website contains six (6) sections that uses the proper semantic tags, to wit
 * Contact Info (Join Lobby) Section
 * Footer
 
-The links in the navigation bar toggles each section except the footer. In the desktop view, the logo (a spinning coin) appears on the left side of the bar and the navigation links appear on the right side. However, the logo is omitted in the mobile view for better responsiveness.
+The navigation bar allows users to toggle between sections, except for the footer. On desktop view, a spinning coin logo appears on the left, while navigation links are aligned to the right. For better responsiveness, the logo is omitted in mobile view.
 
-The header contains the page title and subtitle akin to that of an arcade game. There is no interactivity in the header but an animation was employed to the page title. 
+The header displays the page title and subtitle, styled to resemble an arcade game. While it does not include interactivity, an animation effect enhances the title.
 
-The Player Loadout section contains basic information about the developer and a pixilated photo of her. The other character, which can be viewed using the switch button, discourages the user to pick him, so the user doesn't have much choice but to select the main character. The back and start button triggers another message.
+The Player Loadout section presents basic information about the developer along with a pixelated photo. The alternative character, accessible via the switch button, discourages users from selecting him, leaving the main character as the only viable option. The "Back" and "Start" buttons trigger additional messages.
 
-The Side Quests section contains three (3) hobbies and interests that the developer likes to do when she's not working or studying. Among the three, it is noticeable that the developers likes video games the most, as evident by the website's appearance.
+The Side Quests section highlights three hobbies and interests of the developer. Notably, video games appear to be the most favored, as reflected in the website’s aesthetic.
 
-The Join Lobby section provides the user information on how to connect with the developer. It contains 
+The Join Lobby section provides contact details, including links to social media profiles, an email address, and a location.
+
+Finally, the footer displays the project name and completion date.
