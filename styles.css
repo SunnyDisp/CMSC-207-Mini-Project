@@ -1,8 +1,11 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -14,6 +17,10 @@ body {
     color: #fff;
     font-family: VT323, 'Micro 5', 'Courier New', Courier, monospace;
     font-size: 1.5rem;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /* 1.0 NAVIGATION BAR */
@@ -312,7 +319,7 @@ body {
         display: flex;
         padding: 70px 50px 50px 50px;
         flex-direction: column;
-        height: 160vh;
+        min-height: 180vh;
         gap: 20px;
         width: 100%;
     }
@@ -321,42 +328,27 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
-    .about__text-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: space-between;
-    }
-
+    .about__text-container,
     .about__image-container {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        justify-content: space-between;
+        justify-content: center;
+        flex: 1;
     }
 
-    .about__text-description {
-        flex-basis: 90%;
-    }
-
-    .about__text-buttons {
-        flex-basis: 10%;
-    }
-
-    .about__image-image {
-        flex-basis: 90%;
-    }
-
+    .about__text-description,
+    .about__text-buttons,
+    .about__image-photo,
     .about__image-text {
-        flex-basis: 10%;
+        width: 100%;
     }
-
     .about__title {
         font-size: 8vw;
-        line-height: 40px;
+        line-height: 1.2; /* Use relative line-height */
     }
 
     .about__text-par {
@@ -365,11 +357,11 @@ body {
 
     .about__text-buttons button {
         font-size: 5vw;
-        height: 5vh;
+        height: 4vh;
     }
 
     .about__image-title {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 
     .about__image-photo {
