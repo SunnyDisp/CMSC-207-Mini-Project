@@ -10,10 +10,10 @@
 
 body {
     background-color: 	#1e1e1e;
-    background-image: url(images/background.gif);
-    background-size: contain;
+    background-image: url(images/bg.gif);
+    background-size: repeat;
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.65);
+    /* background-color: rgba(0, 0, 0, 0.65); */
     color: #fff;
     font-family: VT323, 'Micro 5', 'Courier New', Courier, monospace;
     font-size: 1.5rem;
