@@ -109,6 +109,7 @@ body {
 /* 2.2 Mobile View */
 @media (max-width: 600px) {
     #header {
+        height: 100vh;
         padding: 50px;
     }
 
