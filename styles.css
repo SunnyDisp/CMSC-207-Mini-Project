@@ -312,7 +312,7 @@ body {
         display: flex;
         padding: 70px 50px 50px 50px;
         flex-direction: column;
-        height: 100vh;
+        height: 160vh;
         gap: 20px;
         width: 100%;
     }
@@ -338,6 +338,22 @@ body {
         justify-content: space-between;
     }
 
+    .about__text-description {
+        flex-basis: 90%;
+    }
+
+    .about__text-buttons {
+        flex-basis: 10%;
+    }
+
+    .about__image-image {
+        flex-basis: 90%;
+    }
+
+    .about__image-text {
+        flex-basis: 10%;
+    }
+
     .about__title {
         font-size: 8vw;
         line-height: 40px;
@@ -358,7 +374,9 @@ body {
 
     .about__image-photo {
         width: 100%;
-        height: 500px;
+        max-height: 100%;
+        flex-shrink: 0;
+        object-fit: cover;
     }
 
 }
