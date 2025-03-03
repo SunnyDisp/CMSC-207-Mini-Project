@@ -150,68 +150,66 @@ body {
 /* 3.1 Desktop View */
 #about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100vh;
     justify-content: space-between;
-    padding: 100px;
+    padding: 50px 100px;
+    gap: 25px;
+
 }
 
-.about__image {
-    align-items: center;
+.about__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 25px;
+
+}
+
+.about__text-container,
+.about__image-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 565px;
-    justify-content: space-between; 
-    overflow: hidden;
-    width: 48%;
+    gap: 15px;
+    flex-basis: 50%;
+    justify-content: space-between;
 }
 
-.about__image-profile {
-    background-color: white;
-    background-image: url("images/profile.png");
-    background-position: 50% 0%;
-    background-size: cover;
-    border-radius: 8px;
-    height: 440px;
-    min-height: 440px;
-    width: 100%;
-}
-
-.about__image-message {
-    align-items: center;
-    background-color: #21EF80;
-    border-radius: 8px;
+.about__text-description {
     display: flex;
-    height: 650px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    flex-basis: 90%;
     padding: 10px;
-    text-align: center;
-    width: 100%;
-
+    border: #21EF80 solid 3px;
+    border-radius: 8px;
+    /* justify-content: center; */
 }
 
-#about__message {
-    color: #020006;
-    font-family: 'Press Start 2P', 'Silkscreen', 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 1.2;
-}
-
-.about__text {
-    align-items: center;
+.about__text-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 565px;
-    justify-content: space-between; 
-    width: 48%;
-    padding: 20px;
+    flex-direction: row;
+    gap: 5px;
+    flex-basis: 10%;
+    justify-content: space-between;
 }
 
-.about__text-title {
+.about__image-photo {
+    flex-basis: 90%;
+    background-color: red;
+}
+
+.about__image-text {
+    flex-basis: 10%;
+    background-color: #21EF80;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.about__title {
     color: #ff63d8;
     font-size: 2.5rem;
     letter-spacing: 1px;
@@ -220,44 +218,19 @@ body {
     font-family: 'Press Start 2P', 'Silkscreen', 'Courier New', Courier, monospace;
 }
 
-.about__text-description {
-    align-content: center;
-    align-items: center;
-    border: #21EF80 2px solid;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+.about__text-par {
+    font-size: 2.2vw;
 }
 
-.about__text-list {
-    align-content: center;
-    list-style: none;   
-}
-
-.about__text-bullet {
-    font-size: 1.7rem;
-    padding: 5px;
-}
-
-.about__text-bullet:before {
+.about__text-par::before {
     color: #21EF80;
     content:"➧";
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
-.about__text-bullet span {
+.about__text-par span {
     color: #21EF80;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-.about__text-buttons {
-    align-items: flex-end;
-    display: flex;
-    height: 15%;
-    justify-content: space-between;
-    width: 100%;
+    font-weight: 500;
 }
 
 .about__text-buttons button {
@@ -266,20 +239,20 @@ body {
     color: white;
     cursor: pointer;
     font-family: VT323, 'Courier New', Courier, monospace;
-    font-size: 1.8rem;
-    font-weight: 400;
-    height: 50px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    height: auto;
     letter-spacing: 2px;
     outline-offset: 3px;
-    padding: 5px 10px;
+    padding: 5px;
     text-align: center;
     transition: background-color 0.2s;
-    width: 170px;
+    width: 30%;
 }
-
 .about__text-buttons button:active {
     padding: 8px 13px 6px;
 }
+
 #button__back {
     background-color: #00c49c;
 }
@@ -302,6 +275,21 @@ body {
 
 #button__start:hover {
     background-color: #b8489c;
+}
+
+.about__image-title {
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    color: #020006;
+    letter-spacing: 1px;
+    font-size: 1.8vw;
+}
+
+.about__image-photo {
+    background-color: white;
+    background-image: url("images/profile.png");
+    background-position: 50% 0%;
+    background-size: cover;
+    border-radius: 8px;
 }
 
 /* 3.2 Mobile View */
@@ -431,7 +419,7 @@ h2 {
     height: 550px;
     justify-content: space-between;
     padding: 25px;
-    background-color: #21ef8166;
+    background-color: #21ef8147;
 }
 
 .hobbies__item-photo {
