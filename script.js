@@ -35,13 +35,13 @@ function switchPlayer() {
         aboutSkills.innerHTML = "<span>SKILLS:</span> Necromancy, Mind Control, Immortality";
 
         // Change Objective
-        aboutObjective.innerHTML = "<span>OBJECTIVE:</span> Erase all existence, including you, the foolish mortal attempting to choose me";
+        aboutObjective.innerHTML = "<span>OBJECTIVE:</span> Erase all existence, including you, foolish mortal";
 
         // Change Sidekick
         aboutSidekick.innerHTML = "<span>SIDEKICK:</span> Minions of the Void that consume all life forms, starting with you";
 
         // Change Oath
-        aboutOath.innerHTML = "<span>HERO'S OATH:</span> Choose another player, mortal. Lest your story end before it even begins.";
+        aboutOath.innerHTML = "<span>HERO'S OATH:</span> Choose another player. Lest your story end before it even begins.";
     } else {
         
         // Change Name
