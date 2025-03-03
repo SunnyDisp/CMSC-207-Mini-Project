@@ -319,7 +319,7 @@ html, body {
         display: flex;
         padding: 70px 50px 50px 50px;
         flex-direction: column;
-        min-height: 180vh;
+        height: 150vh;
         gap: 20px;
         width: 100%;
     }
@@ -352,7 +352,7 @@ html, body {
     }
 
     .about__text-par {
-        font-size: 5vw;
+        font-size: 5.3vw;
     }
 
     .about__text-buttons button {
