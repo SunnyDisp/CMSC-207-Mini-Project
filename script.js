@@ -12,7 +12,7 @@ const aboutSidekick = document.querySelector(".about__sidekick");
 const aboutOath = document.querySelector(".about__oath");
 
 function switchPlayer() {
-    if (aboutMessage.innerHTML === "SANNIE AGNES GENITO") {
+    if (aboutMessage.innerHTML === "SANNIE AGNES") {
         
         // Change Name
         aboutMessage.innerHTML = "THE LICH KING";
@@ -45,7 +45,7 @@ function switchPlayer() {
     } else {
         
         // Change Name
-        aboutMessage.textContent = "SANNIE AGNES GENITO";
+        aboutMessage.textContent = "SANNIE AGNES";
 
         // Change Image
         aboutPhoto.style.backgroundImage = "url('images/profile.png')";
