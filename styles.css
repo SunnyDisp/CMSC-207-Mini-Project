@@ -12,6 +12,7 @@ body {
     background-color: 	#1e1e1e;
     background-image: url(images/bg.gif);
     background-size: repeat;
+    background-blend-mode: lighten;
     color: #fff;
     font-family: VT323, 'Micro 5', 'Courier New', Courier, monospace;
     font-size: 1.5rem;
