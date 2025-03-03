@@ -208,6 +208,7 @@ body {
     height: 565px;
     justify-content: space-between; 
     width: 48%;
+    padding: 20px;
 }
 
 .about__text-title {
@@ -308,21 +309,22 @@ body {
     #about {
         align-items: center;
         flex-direction: column-reverse;
-        gap: 30px;
-        height: auto;
-        padding: 30px;
+        gap: 20px;
+        padding: 50px;
         justify-content: space-between;
+        height: 200vh;
     }
 
     .about__image, 
     .about__text {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        width: 100%;
+        gap: 10px;
+        width: auto;
         align-items: center;
-        text-align: center;
+        /* text-align: center; */
         justify-content: space-between;
+        height: 100vh;
     }
 
     .about__image {
