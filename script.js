@@ -106,14 +106,14 @@ function swapImage(selectedImg, img1, img2) {
     }
 }
 
-photoGames?.addEventListener("click", () => {
+photoGames.addEventListener("click", () => {
     swapImage(photoGames, "gta.jpg", "genshin.png");
 });
 
-photoTravel?.addEventListener("click", () => {
+photoTravel.addEventListener("click", () => {
     swapImage(photoTravel, "singapore.jpg", "malaysia.jpg");
 });
 
-photoAnime?.addEventListener("click", () => {
+photoAnime.addEventListener("click", () => {
     swapImage(photoAnime, "jojo.png", "demonslayer.jpg");
 });
