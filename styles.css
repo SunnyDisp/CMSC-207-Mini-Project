@@ -612,6 +612,15 @@ footer p {
     margin: 0;
 }
 
+.contact__info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact__info a:hover {
+    text-decoration: underline;
+}
+
 /* 6.2 Mobile View */
 @media (max-width: 600px) {
     footer {
